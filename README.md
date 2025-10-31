@@ -1,15 +1,11 @@
-# 🦀 Rust Backend API
+# Rust Backend API
 
 A RESTful API built with Rust using Actix-Web framework, providing user authentication and task management functionality with MongoDB as the database.
-
-[![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
-[![Actix Web](https://img.shields.io/badge/actix%20web-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)](https://actix.rs/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 
 ## Features
 
 - **User Management**: User registration, login, and JWT-based authentication
-- **Task Management**: Create, read, update, and delete tasks with status tracking and optional icons
+- **Task Management**: Create, read, update, and delete tasks with status tracking
 - **Authentication**: JWT access and refresh tokens for secure API access
 - **Database**: MongoDB integration with BSON serialization
 - **Security**: Password hashing with bcrypt, middleware-based authentication
@@ -107,7 +103,6 @@ A RESTful API built with Rust using Actix-Web framework, providing user authenti
   {
     "title": "Task Title",
     "description": "Task description",
-    "icon": "📝",
     "status": "Pending",
     "user_id": "user_id"
   }
@@ -129,7 +124,6 @@ A RESTful API built with Rust using Actix-Web framework, providing user authenti
   {
     "title": "Updated Title",
     "description": "Updated description",
-    "icon": "✅",
     "status": "InProgress"
   }
   ```
